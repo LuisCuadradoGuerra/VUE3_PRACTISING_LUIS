@@ -2,7 +2,7 @@
 
 Repositorio para pruebas con el framework VUE 3, usando Vite para los test del proyecto y TS como lenguaje de programación principal.
 
-# Requerimientos
+## Requerimientos
 
 Procedimiento completo aquí [Creating Vue Application](https://vuejs.org/guide/quick-start)
 
@@ -18,7 +18,7 @@ Y como resultado tiene que salir por consola la versión de Node.js que hayas in
 
 Listo. Sólo queda descargar Visual Studio Code, añadir la extensión oficial de VUE y podemos comenzar.
 
-# Comandos instalación e inicialización VUE
+## Comandos instalación e inicialización VUE
 
 En la terminal abierta en la raíz de tu proyecto, escribe:
 
@@ -38,3 +38,13 @@ npm run dev
 ```
 
 Y ya tienes el entorno listo y configurado.
+
+### Configuración
+
+Hay un problema que puede presentarse debido a que TypeScript no reconozca los archivos .vue debido al uso de Webpack. Aquí dejo dos sitios web donde explican el proceso [StackOverflow](https://stackoverflow.com/questions/54622621/what-does-the-shims-tsx-d-ts-file-do-in-a-vue-typescript-project) y [TypeScript for Webpack](https://fettblog.eu/typescript-modules-for-webpack/)
+
+La solución implementada en este proyecto es crear un archivo en el src llamado **shims-vue.d.ts** cuyo contenido sea:
+
+```bash
+declare module '*.vue'
+```
