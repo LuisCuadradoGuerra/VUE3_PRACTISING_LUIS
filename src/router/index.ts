@@ -5,7 +5,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'Home',
+      name: 'home',
       component: () => import('@/views/CardView.vue'),
       meta: {
         requiresAuth: false,
@@ -14,7 +14,7 @@ const router = createRouter({
     },
     {
       path: '/selection',
-      name: 'Selection',
+      name: 'selection',
       component: () => import('@/views/SelectionView.vue'),
       meta: {
         requiresAuth: false,
