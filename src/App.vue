@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1>Index Page</h1>
+  <h1>Where dreams come true</h1>
 
   <div>
     <RouterView />

@@ -1,17 +1,29 @@
 <template>
-  <button
-    class="px-4 py-2 rounded border transition-all"
-    :class="selected
-      ? 'bg-blue-600 text-white border-blue-600'
-      : 'bg-white text-gray-800 border-gray-300 hover:bg-gray-100'"
-  >
-    {{ label }}
-  </button>
+  <select v-model="innerValue" class="border px-4 py-2 rounded w-60 text-gray-700">
+    <option disabled value="">Selecciona una opción</option>
+    <option v-for="option in options" :key="option" :value="option">
+      {{ option }}
+    </option>
+  </select>
 </template>
 
 <script setup lang="ts">
-  defineProps<{
-    label: string
-    selected: boolean
-  }>()
+import { ref, watch } from 'vue'
+
+const props = defineProps<{
+  modelValue: string
+  options: string[]
+}>()
+
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: string): void
+}>()
+
+const innerValue = ref(props.modelValue)
+
+watch(innerValue, (value) => emit('update:modelValue', value))
+watch(
+  () => props.modelValue,
+  (newValue) => (innerValue.value = newValue),
+)
 </script>

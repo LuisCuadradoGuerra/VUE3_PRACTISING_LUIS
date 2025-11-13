@@ -34,10 +34,15 @@ Después corre en orden estos comandos:
 cd nombre_carpeta_proyecto
 npm install
 npm run format
+```
+
+Y ya tienes el entorno listo y configurado. Para ejecutarlo, debes usar este otro comando:
+
+```bash
 npm run dev
 ```
 
-Y ya tienes el entorno listo y configurado.
+Ctrl + Click izquierdo encima de http://localhost:PUERTO abrirá una pestaña en tu navegador con la vista principal del proyecto.
 
 ### Configuración
 
