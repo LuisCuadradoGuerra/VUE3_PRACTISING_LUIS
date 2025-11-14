@@ -6,7 +6,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('@/views/CardView.vue'),
+      component: () => import('@/pages/CardView.vue'),
       meta: {
         requiresAuth: false,
         title: 'Home',
@@ -15,7 +15,7 @@ const router = createRouter({
     {
       path: '/selection',
       name: 'selection',
-      component: () => import('@/views/SelectionView.vue'),
+      component: () => import('@/pages/SelectionView.vue'),
       meta: {
         requiresAuth: false,
         title: 'Selection',
@@ -24,7 +24,7 @@ const router = createRouter({
     {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
-      component: () => import('@/views/NotFoundView.vue'),
+      component: () => import('@/pages/NotFoundView.vue'),
       meta: {
         requiresAuth: false,
         title: 'Alguien se ha hecho caquita...',
