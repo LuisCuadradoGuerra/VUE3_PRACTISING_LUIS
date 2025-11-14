@@ -22,3 +22,11 @@ rad.json
 TestResults.xml
 #Enviorment folder
 .env
+#Node-modules
+node_modules/
+#Git Attributes
+.gitattributes
+#Editor Config
+.editorconfig
+#Comentario
+node_modules
