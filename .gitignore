@@ -23,7 +23,7 @@ TestResults.xml
 #Enviorment folder
 .env
 #Node-modules
-node-modules/
+node_modules/
 #Git Attributes
 .gitattributes
 #Editor Config
