@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import CardView from '@/views/CardView.vue'
+import CardView from '@/pages/CardView.vue'
 import { mount } from '@vue/test-utils'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from '../App.vue'
@@ -11,7 +11,7 @@ describe('App', () => {
   })
 })
 
-// Rutas simuladas (solo necesitamos la de destino)
+// Rutas simuladas
 const router = createRouter({
   history: createWebHistory(),
   routes: [

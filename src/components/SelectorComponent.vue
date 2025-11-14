@@ -13,6 +13,8 @@ import { ref, watch } from 'vue'
 const props = defineProps<{
   modelValue: string
   options: string[]
+
+
 }>()
 
 const emit = defineEmits<{
