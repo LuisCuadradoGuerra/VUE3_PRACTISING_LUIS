@@ -29,3 +29,4 @@ node-modules/
 #Editor Config
 .editorconfig
 #Comentario
+node_modules
